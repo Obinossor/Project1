@@ -1,0 +1,281 @@
+/* body {
+  background: #222
+    url("https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?cs=srgb&dl=pexels-pixabay-33129.jpg&fm=jpg")
+    center center no-repeat;
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  position: relative;
+} */
+
+#header {
+  margin-top: 20vh;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: 40px;
+  font-size: 120px;
+  color: rgb(246, 239, 238);
+  display: flex;
+
+}
+
+span {
+  color: red
+
+}
+
+.checkBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  size: 40px;
+}
+
+.container {
+  margin-bottom: 30px;
+}
+
+.mr-15 {
+  margin-right: 40px;
+}
+
+.navbar {
+  background-color: #080808;
+}
+
+/* .navbar-brand {
+  color: rgb(246, 239, 238);
+  font-size: 30px;
+  float: right;
+} */
+/* .streamService {
+  color: red;
+  margin-right: 40px;
+} */
+
+/* .col-md-4 {
+    margin-left: 6rem;
+  } */
+
+/* CSS for Movie Display*/
+.movie-div {
+  display: flex;
+  flex-direction: row;
+  background-color: #ECE9E6;
+  color: black;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  border: solid #000000 3px;
+  flex: 1;
+
+}
+
+.movie-child {
+  flex: 2 1 auto;
+  font-style: italic;
+  display: flex;
+  top: 0px;
+  padding-left: 10px;
+  padding-right: 20px;
+  margin-top: 10px;
+  position: relative;
+}
+
+
+.movie-my-list{
+  margin-top:10%;
+}
+/*
+.movie-year{
+  position: relative;
+  left: -40%;
+  top: 45px;
+}*/
+
+.emptyList{
+    width: 75%;
+    position: relative;
+    left: 15%;
+    text-align: center;
+}
+
+.movie-year,
+.imdbRating,
+.boxOffice {
+  font-style: italic;
+  display: flex;
+  flex: 1;
+  top: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-around;
+}
+
+/* The Modal (background) */
+.modal-my-list {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* CSS FOR MY LIST AND MODAL */
+#myList {
+  float: right;
+  margin-top: 1em;
+  border: 1px solid #3bafda;;
+  border-radius: 10rem;
+  cursor: pointer;
+  background-color: #16222a;
+}
+
+#myList:hover{
+  background-color: #3bafda;
+}
+
+/* CSS or Search Button */
+.searchButton {
+  padding-left: 3em;
+  padding-right: 3em;
+  font-size: 1.5em;
+  border-radius: 10em;
+  background-color: #16222a;
+}
+/*CSS for Add To My List */
+.btn-block + .btn-block {
+  margin-top: 0px;
+}
+.details-button {
+  font-style: italic;
+  align-items: center;
+  top: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 40px;
+  width: 150px;
+  background-color: #16222a;
+}
+
+.myListNavLogo:hover{
+  cursor:pointer;
+}
+
+
+/* list div for my list */
+.movie-div-mylist {
+  display: inline-flex;
+  flex-direction: row;
+  background-color: #ECE9E6;
+  color: black;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  border: solid #000000 3px;
+  flex: 1;
+  height: 450px;
+  width: 220px;
+  margin-left: -4px;
+  position: relative;
+}
+
+.movie-my-list{
+  padding-left: 35px;
+  margin-left: 100px;
+}
+
+.title{
+  position: absolute;
+  width: 200px;
+  top: 2%;
+  font-size: 150%;
+  text-align: center;
+}
+
+.delete-mylist-element{
+  height: 45px;
+  width: 200px;
+  position: absolute;
+  margin-left: -3px;
+  top: 88.5%;
+}
+
+
+
+
+/*CSS for Media Query*/
+@media only screen and (max-width: 990px) {
+  .movie-div {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .movie-div img {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  #header {
+    margin-top: 20vh;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 40px;
+    font-size: 60px;
+    color: rgb(246, 239, 238);
+    display: flex;
+
+  }
+}
+
+@media only screen and (max-width: 990px) {
+
+  .movie-title,
+  .movie-year,
+  .imdbRating,
+  .boxOffice {
+    font-style: italic;
+    display: flex;
+    flex: 1;
+    top: 0px;
+    padding: 5px;
+    margin: 0px;
+    justify-content: space-around;
+  }
+}
+
